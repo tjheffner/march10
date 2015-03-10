@@ -11,7 +11,7 @@
     ));
 
     $app->get("/", function() use ($app) {
-        return "Home";
+        return $app['twig']->render("input_form.twig");
     });
 
     //other pages go here
