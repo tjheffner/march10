@@ -6,11 +6,15 @@
 
     $app['debug']=TRUE;
 
-    //twig info here
+    $app->register(new Silex\Provider\TwigServiceProvider(), array(
+        'twig.path' => __DIR__.'/../views'
+    ));
 
     $app->get("/", function() use ($app) {
         return "Home";
     });
+
+    //other pages go here
 
     return $app;
 
