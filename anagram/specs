@@ -22,13 +22,7 @@ spec2
 for the inputs 'a' and 'b' we return 'not a match'
 
 spec3
-for the inputs 'ab' and 'ab' we return 'match'
-
-spec4
-for the inputs 'ab' and 'bb' we return 'not a match'
-
-spec5
 for the inputs 'ab' and 'ba' we return 'match'
 
-spec6
+spec4
 for the inputs 'ab' and 'aab' we return 'not a match'
