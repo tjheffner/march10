@@ -1,0 +1,14 @@
+spec 1
+for each user input word, we return an array of the constituent letters. for example "cat" returns (c, a, t)
+
+spec 2
+for each array, we return an ordered array. (c, a, t) returns (a, c, t)
+
+spec 3
+we compare the arrays and return TRUE for matching arrays. For example, (a, c, t) = (a, c, t)
+
+spec 4
+For true comparisons, we return the original words. For example, "cat" and "act"
+
+spec 5
+If there are no matching arrays we encourage the user to try harder using photographs of cats.
