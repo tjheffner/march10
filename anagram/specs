@@ -12,3 +12,23 @@ For true comparisons, we return the original words. For example, "cat" and "act"
 
 spec 5
 If there are no matching arrays we encourage the user to try harder using photographs of cats.
+
+
+
+spec1
+for the inputs 'a' and 'a' we return 'match'
+
+spec2
+for the inputs 'a' and 'b' we return 'not a match'
+
+spec3
+for the inputs 'ab' and 'ab' we return 'match'
+
+spec4
+for the inputs 'ab' and 'bb' we return 'not a match'
+
+spec5
+for the inputs 'ab' and 'ba' we return 'match'
+
+spec6
+for now, the inputs 'ab' and 'aab' we return 'not a match'
