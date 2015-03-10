@@ -31,4 +31,4 @@ spec5
 for the inputs 'ab' and 'ba' we return 'match'
 
 spec6
-for now, the inputs 'ab' and 'aab' we return 'not a match'
+for the inputs 'ab' and 'aab' we return 'not a match'
