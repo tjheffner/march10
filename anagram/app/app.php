@@ -16,8 +16,18 @@
 
     $app->get("/anagram_check", function() use($app) {
         $input_words = new Anagram;
+        $input_words2 = new Anagram;
+        $input_words3 = new Anagram;
+        $input_words4 = new Anagram;
+
         $match = $input_words->compareWords($_GET['input1'], $_GET['input2']);
-        return $app['twig']->render("anagram_check.twig", array('answer' => $match));
+        $match2 = $input_words2->compareWords($_GET['input1'], $_GET['input3']);
+        $match3 = $input_words3->compareWords($_GET['input1'], $_GET['input4']);
+        $match4 = $input_words4->compareWords($_GET['input1'], $_GET['input5']);
+
+        $matches = array($match, $match2, $match3, $match4);
+
+        return $app['twig']->render("anagram_check.twig", array('answer' => $matches));
     });
 
     return $app;

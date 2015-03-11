@@ -7,10 +7,13 @@
     <body>
         <div class="container">
         <h3>Were you smart?</h3>
-        <p> Your word: </p>
-        <p> {{ answer }} </p>
+        {% for word in answer%}
+          <p> {{ word }} </p>
+        {% endfor %}
 
-        <button class="btn btn-success"><a href='/'>Back</a></button>
+        <form action="/">
+          <button class="btn btn-info">Back</button>
+        </form>
         </div>
     </body>
 </html>
